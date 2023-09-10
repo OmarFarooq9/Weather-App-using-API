@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+h1 {
+  background: #00AFB9;
+  font-size: 1.75rem;
+  text-align: center;
+  padding: 18px 0;
+  color: #fff;
+}
+.weather-app {
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+}
+.weather-input {
+  width: 550px;
+}
+.weather-input input {
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #008FB9;
+}
+.weather-input .separate {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #BBBBBB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-input .separate::before{
+  content: "or";
+  color: #6C757D;
+  font-size: 1.18rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #E3F2FD;
+}
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  background: #2B2D42;
+  transition: 0.2s ease;
+}
+.weather-input .searchButton:hover {
+  background: #008FB9;
+}
+.weather-input .locationButton {
+  background: #6C757D;
+}
+.weather-input .locationButton:hover {
+  background: #5c636a;
+}
+.weatherdata {
+  width: 100%;
+}
+.weatherdata .currentWeather {
+  color: #fff;
+  background: #0081A7;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.currentWeather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.weatherdata h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.currentWeather .icon {
+  text-align: center;
+}
+.currentWeather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.currentWeather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.forecastdays h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.forecastdays .weatherCards {
+  display: flex;
+  gap: 20px;
+}
+.weatherCards .card {
+  color: #fff;
+  background: #000000d0;
+  padding: 30px 55px;
+  list-style: none;
+  width: calc(100% / 5);
+  background: linear-gradient(135deg,  #124559, #6C757D);
+  border-radius: 5px;
+}
+.weatherCards .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.weatherCards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
+
+@media (max-width: 1400px) {
+  .weatherdata .currentWeather {
+    padding: 20px;
+  }
+  .weatherCards {
+    flex-wrap: wrap;
+  }
+  .weatherCards .card {
+    width: calc(100% / 4 - 15px);
+  }
+}
+@media (max-width: 1200px) {
+  .weatherCards .card {
+    width: calc(100% / 3 - 15px);
+  }
+}
+@media (max-width: 950px) {
+  .weather-input {
+    width: 450px;
+  }
+  .weatherCards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
+  }
+  .weather-app {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input {
+    width: 100%;
+  }
+  .weatherdata h2 {
+    font-size: 1.35rem;
+  }
+}
+
+
+.social-menu ul {
+  position: relative;
+left: 1150px;
+top: 50%;
+transform: translate(-50%, -50%);
+padding: 0;
+margin: 0;
+display: flex;
+}
+.social-menu ul li {
+list-style: none;
+margin: 0 10px;
+}
+.social-menu ul li .fa {
+color: #000000;
+font-size: 25px;
+line-height: 50px;
+transition: .5s;
+}
+.social-menu ul li .fa:hover {
+color: #ffffff;
+}
+.social-menu ul li a {
+position: relative;
+display: block;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: white;
+text-align: center;
+transition: 0.5s;
+transform: translate(0,0px);
+box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+transform: rotate(0deg) skew(0deg) translate(10px, 0px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+background-color: #333;
+}
+.social-menu ul li:nth-child(5) a:hover {
+background-color: #0077B5;
+
+}
+.social-menu ul li:nth-child(6) a:hover {
+background-color: #1ed760;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 30px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+}
