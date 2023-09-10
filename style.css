@@ -118,7 +118,7 @@ h1 {
 .weatherCards .card {
   color: #fff;
   background: #000000d0;
-  padding: 30px 55px;
+  padding: 30px 17px;
   list-style: none;
   width: calc(100% / 5);
   background: linear-gradient(135deg,  #124559, #6C757D);
@@ -177,8 +177,8 @@ h1 {
 
 .social-menu ul {
   position: relative;
-left: 1150px;
-top: 50%;
+left: 1300px;
+top: 90%;
 transform: translate(-50%, -50%);
 padding: 0;
 margin: 0;
@@ -228,19 +228,18 @@ background-color: #333;
 background-color: #0077B5;
 
 }
-.social-menu ul li:nth-child(6) a:hover {
-background-color: #1ed760;
-}
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: left;
-  padding: 30px 0;
+  padding: 20px 0;
+  position: relative;
 }
 
 footer p {
   margin-bottom: 0;
+  
 }
 
 .header {
