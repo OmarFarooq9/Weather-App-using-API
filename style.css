@@ -8,6 +8,11 @@
 }
 body {
   background: #E3F2FD;
+  background-image: url('./image.jpg') ; 
+ 
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 h1 {
   background: #00AFB9;
